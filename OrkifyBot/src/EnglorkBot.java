@@ -12,10 +12,13 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.telegram.telegrambots.exceptions.TelegramApiValidationException;
 
 public class EnglorkBot extends TelegramLongPollingBot {
+	
+	private static final String TOKEN = "Token";
+	private static final String NAME = "Name";
 
 	@Override
 	public String getBotUsername() {
-		return "OrkifyBot";
+		return NAME;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -58,7 +61,7 @@ public class EnglorkBot extends TelegramLongPollingBot {
 
 	@Override
 	public String getBotToken() {
-		return "468041230:AAEHmw8V3o3IIVr3GtEnItRFXAqxAmzW7TA";
+		return TOKEN;
 	}
 
 	private static String orkalise(String text) {
